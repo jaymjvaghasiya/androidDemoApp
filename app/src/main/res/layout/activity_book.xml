@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgViewBookLogo"
+        android:src="@drawable/book_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50pt"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/edtBookName"
+        android:layout_below="@id/imgViewBookLogo"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:hint="Book Name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/edtBookPrice"
+        android:layout_below="@id/edtBookName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:hint="@string/book_name"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/spinnerBookCategory"
+        android:layout_below="@id/edtBookPrice"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBookSubmit"
+        android:layout_below="@id/spinnerBookCategory"
+        android:layout_marginTop="30dp"
+        android:text="@string/calculate_price"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

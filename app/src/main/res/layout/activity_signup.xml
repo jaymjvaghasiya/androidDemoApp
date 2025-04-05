@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSignupTitle"
+        android:text="@string/sign_up"
+        android:textSize="25pt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSignupFnm"
+        android:layout_below="@id/tvSignupTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="80dp"
+        android:hint="@string/first_name"
+        android:minHeight="48dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSignupEmail"
+        android:layout_below="@id/edtSignupFnm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="80dp"
+        android:hint="@string/email"
+        android:minHeight="48dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtSignupEmail"
+        android:id="@+id/edtSignupPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="80dp"
+        android:hint="@string/password"
+        android:minHeight="48dp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignupSubmit"
+        android:layout_below="@id/edtSignupPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/sign_up"
+        />
+
+
+</RelativeLayout>
