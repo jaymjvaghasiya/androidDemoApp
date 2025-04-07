@@ -55,7 +55,7 @@ public class MenuActivity extends AppCompatActivity {
                 rotateAnimator.start();
 
                 new Handler().postDelayed(() -> {
-                    Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), PlayGameActivity.class);
                     startActivity(intent);
                 }, 500);
 
